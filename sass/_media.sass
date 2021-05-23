@@ -1,0 +1,316 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .hotel
+    &-right
+      margin-left: 20px
+    &-slider
+      width: 600px
+      &__image
+        width: 100%
+        height: 100%
+        object-fit: cover
+  .card
+    width: 225px
+    height: 230px
+  .packages
+    &__card--large
+      max-width: none
+      &__image
+        min-width: 50%
+    &__wrapper
+      grid-template-columns: 295px 295px 295px
+      gap: 20px
+    &__content
+      padding: 35px
+      &-description
+        margin: 0 0 20px 0
+      &-info
+        margin: 0 0 20px 0
+@media (max-width: 992px)
+  .container, .newsletter-wrapper
+    max-width: 700px
+  .logo
+    width: 132px
+  .navbar
+    &-top
+      padding: 30px 0
+    &__search
+      margin-left: auto
+      max-width: 340px
+  .nav
+    &__link
+      font-size: 12px
+      line-height: 15px
+  .search
+    &__input
+      width: 340px
+  .hotel
+    &-slider
+      width: 100%
+    &-grid
+      flex-direction: column
+    &-right
+      flex-direction: row
+      margin-left: 0
+    &__slider
+      margin-bottom: 20px
+  .booking
+    width: 340px
+    margin-right: 20px
+  .map
+    width: 340px
+  .newsletter
+    &-wrapper
+      max-width: 700px
+  .reviews
+    &-slider
+      &__item
+      max-width: 580px
+      &__button
+        &__prev
+          left: 17px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 325px
+    height: 250px
+    &__title
+      width: 150px
+  .packages
+    &__wrapper
+      grid-template-rows: 500px 500px 500px
+      grid-template-columns: 324px 324px
+      grid-template-areas: "card1 card1" "card2 card3" "card4 card5"
+    &__content
+      padding: 30px 21px 10px 40px
+      &-description
+        width: 250px
+        min-height: 200px
+        margin-bottom: 15px
+@media (max-width: 768px)
+  .container
+    max-width: 576px
+    width: 92%
+  .nav
+    &__link
+      padding: 22px 0
+      margin-left: 16px
+      font-size: 8px
+      line-height: 15px
+  .stars
+    flex-basis: auto
+  .hotel
+    padding-top: 18px
+    &-name
+      flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+    &-info
+      &__text
+        width: 100%
+      &__name
+        margin-top: 10px
+        margin-bottom: 0
+      &__rating
+        display: none
+      &__offer
+        order: -1
+        margin-left: 0
+    &-right
+      height: 210px
+      padding-top: 12px
+    &-slider
+      height: 350px
+  .booking
+    width: 50%
+    flex: auto
+    &__price
+      margin-left: -5px
+    &__call-center
+      margin-left: -6px
+    &__button
+      text-overflow: inherit
+      padding: 13px 44px
+  .map
+    width: 50%
+    flex-auto: 0 
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &::after, &::before
+          display: none
+      &__text
+        max-width: 455px
+    &__slider
+      padding-top: 27px
+    &__title
+      font-weight: bold
+      font-size: 30px
+      line-height: 24px
+      text-align: center
+      text-transform: uppercase
+      margin-top: 6px
+  .activities
+    padding-top: 31px
+    padding-bottom: 60px
+  .card
+    width: 49%
+    height: 255px
+    &__title
+      width: 200px
+  .packages
+    &__wrapper
+      grid-template-rows: 460px 460px 460px
+      grid-template-columns: 251px 251px
+      grid-template-areas: "card1 card1" "card2 card3" "card4 card5"
+    &__content
+      padding: 25px
+      &-title
+        margin: 0 0 20px 0
+      &-description
+        width: 224px
+        min-height: 165px
+        font-size: 12px
+        margin: 0 0 20px 0
+      &-info
+        margin: 0 0 34px 0
+      &__image
+        height: 200px
+    &__card--small
+      &__image
+        height: 230px
+    &__info2
+      margin-bottom: 14px
+    &__content2
+      padding: 21px 21px 10px 30px
+    &__button
+      padding: 7px 15px
+@media (max-width: 576px)
+  .logo
+    width: 99px
+  .navbar
+    &__search, &__user
+      display: none
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+  .nav
+    &__list
+      display: none
+  .hotel
+    &__slider
+      margin-bottom: 10px
+    &-slider
+      height: 250px
+    &-right
+      flex-direction: column
+      min-height: 450px
+  .newsletter
+    padding: 76px 0 83px 0
+    &__title
+      margin-bottom: 37px
+    &-wrapper
+      max-width: 576px
+      width: 92%
+      flex-direction: column
+      align-items: flex-start
+  .subscribe
+    width: 100%
+  .card
+    width: 100%
+  .activities
+    &__card2
+      order: 1
+    &__card4
+      order: 2
+    &__title
+      margin: -40px 0 57px 0
+      font-weight: bold
+      font-size: 18px
+      line-height: 60px
+      text-transform: uppercase
+    &__wrapper
+      margin-top: -39px
+  .reviews
+    &-slider
+      margin-top: -25px
+      &__button
+        display: flex
+        justify-content: center
+        align-items: center
+        top: 32px
+        &__prev
+          left: 50%
+          margin-left: -91px
+          transform: translate(-50%, 0)
+        &__next
+          right: 50%
+          margin-right: -91px
+          transform: translate(50%, 0)
+      &__text
+        max-height: none
+        overflow-y: none
+    &__title
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
+      margin-top: 30px
+    &__slider
+      padding-top: 7px
+  .booking
+    width: 100%
+    flex: 0
+    &__price
+      margin-left: -5px
+    &__call-center
+      margin-left: -6px
+  .map
+    width: 100%
+  .packages
+    &__wrapper
+      row-gap: 20px
+      grid-template-rows: 500px 470px 470px 470px 470px
+      grid-template-columns: 100%
+      grid-template-areas: "card1" "card2" "card3" "card4" "card5"
+    &__card--large
+      flex-direction: column
+      max-width: 100%
+      &__image
+        width: 100%
+        height: 250px
+    &__content
+      padding: 15px 21px 10px 25px
+      &-description
+        display: none
+      &-info
+        margin-bottom: 25px
+    &__card--small
+      max-width: 100%
+      &__image
+        width: 100%
+    &__button
+      padding: 10px 18px
+      font-size: 13px
+      
+  
+

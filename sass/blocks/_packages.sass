@@ -1,0 +1,159 @@
+.packages
+  padding: 40px 0 70px 0
+  &__wrapper
+    display: grid
+    grid-template-rows: 500px 500px
+    gap: 30px
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-areas: "card1 card1 card2" "card3 card4 card5"
+  &-card1
+    grid-area: card1
+  &-card2
+    grid-area: card2
+  &-card3
+    grid-area: card3
+  &-card4
+    grid-area: card4
+  &-card5
+    grid-area: card5
+  &__title
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin: 0 0 65px 0
+  &__card--large
+    max-width: 730px
+    max-height: 500px
+    display: flex
+    position: relative
+    background-color: #0A223D
+    color: #fff
+    border-radius: 8px
+    overflow: hidden
+    &__image
+      min-width: 366px
+      height: 500px
+      object-fit: cover
+  &-offer1
+    position: absolute
+    top: 26px
+    left: 0
+    padding: 8px 12px
+    font-weight: 600
+    font-size: 12px
+    line-height: 15px
+    border-radius: 0px 4px 4px 0px
+  &__stars
+    margin-bottom: 5px
+  &__content
+    padding: 46px 21px 30px 44px
+    &-title
+      max-width: 165px
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin: 0 0 27px 0
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+    &-description
+      max-width: 299px
+      font-weight: normal
+      font-size: 14px
+      line-height: 160.6%
+      overflow-y: auto
+      margin: 0 0 34px 0
+    &-info
+      margin: 0 0 37px 0
+      padding: 0
+  &__item
+    display: flex
+    align-items: center
+    margin-bottom: 11px
+    &:last-child
+      margin: 0
+  &__text
+    font-size: 12px
+    line-height: 15px
+    list-style-type: none
+  &__icon
+    fill: #fff
+    margin-right: 14px
+  &-price
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &__lastprice
+      flex-basis: 100%
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+      margin-bottom: 5px
+    &__pricetag
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+  &__button
+    max-width: 134px
+    padding: 11px 27px
+    border-radius: 4px
+    background-color: $primary
+    color: $light
+    border: none
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    margin-top: -5px
+    cursor: pointer
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+    &:hover
+      transition: 0.3s
+      background-color: #bb0a2b
+    &:not(:hover)
+      transition: 0.3s
+  &__card--small
+    max-width: 350px
+    max-height: 500px
+    display: flex
+    flex-direction: column
+    align-items: stretch
+    justify-content: space-between
+    position: relative
+    background-color: #0A223D
+    color: #fff
+    border-radius: 8px
+    overflow: hidden
+    &__image
+      width: 100%
+      height: 250px
+      object-fit: cover
+      flex: 0 0 50%
+  &-offer2
+    position: absolute
+    top: 26px
+    left: 0
+    padding: 4px 9px
+    font-weight: 600
+    font-size: 8px
+    line-height: 10px
+    border-radius: 0px 4px 4px 0px
+  &__content2
+    padding: 30px 21px 25px 32px
+    flex: 0 0 50%
+    &-title
+      max-width: 140px
+      margin: 0 0 23px 0
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+    &-info
+      margin-bottom: 25px
+      padding: 0
+
+
+
+      

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=28f2864b-fbed-44fd-ae7a-a0d292c5269c&lang=ru_RU"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
+          </a>
+          <form action="#" class="search navbar__search">
+            <input type="text" class="search__input" placeholder="Seacrh Location" />
+            <button class="search__button">
+              <img src="./img/search.svg" alt="Icon: search" />
+            </button>
+          </form>
+          <a href="#" class="user navbar__user">
+            <img src="./img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
+            <span class="user__name">Nathan</span>
+          </a>
+          <!-- /.user -->
+          <button class="menu-button navbar-top__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+        </div>
+        <!-- /.navbar-top -->
+      </div>
+      <!-- /.container -->
+      <div class="nav-bottom">
+        <div class="container">
+          <nav class="nav navbar__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">All Deals</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Hotels</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Activities</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Hotel Day Packages</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Restaurants</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Events</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Rodrigues</a>
+              </li>
+            </ul>
+            <!-- /.nav__list -->
+          </nav>
+        </div>
+      </div>
+      <!-- /.navbar-bottom -->
+    </header>
+    <nav class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Home</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+          </li>
+          <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
+        </ul>
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- .breadcrumb -->
+    <section class="hotel">
+      <div class="container">
+        <div class="hotel-info">
+          <div class="hotel-info__text">
+            <div class="hotel-wrapper">
+              <div class="stars">
+                <img src="./img/star.svg" alt="star" />
+                <img src="./img/star.svg" alt="star" />
+                <img src="./img/star.svg" alt="star" />
+                <img src="./img/star.svg" alt="star" />
+                <img src="./img/star.svg" alt="star" />
+              </div>
+              <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
+              <span class="offer hotel-info__offer">Flash Offer</span>
+            </div>
+            <p class="hotel-description hotel-info__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
+          </div>
+          <!-- /.hotel-info__left -->
+          <div class="rating hotel-info__rating">
+            <span class="rating__text">User Rattings</span>
+            <span class="rating__counters">4.5/<span class="counter-mini">5</span> </span>
+          </div>
+          <!-- /.hotel-info__right -->
+        </div>
+        <!-- .hotel-info -->
+        <div class="hotel-grid">
+          <!-- Slider main container -->
+          <div class="swiper-container hotel-slider hotel__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hotel-slider__item">
+                <img class="hotel-slider__image" src="./img/slide.jpg" alt="slide" />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img class="hotel-slider__image" src="./img/slide2.jpg" alt="slide" />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img class="hotel-slider__image" src="./img/slide3.jpg" alt="slide" />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img class="hotel-slider__image" src="./img/slide4.jpg" alt="slide" />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img class="hotel-slider__image" src="./img/slide5.jpg" alt="slide" />
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <button class="hotel-slider__button hotel-slider__button__prev">
+              <svg width="10" height="18">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.634.616a1.25 1.25 0 010 1.768L3.018 9l6.616 6.616a1.25 1.25 0 01-1.768 1.768l-7.5-7.5a1.25 1.25 0 010-1.768l7.5-7.5a1.25 1.25 0 011.768 0z"
+                  fill-opacity=".8"
+                />
+              </svg>
+            </button>
+            <button class="hotel-slider__button hotel-slider__button__next">
+              <svg width="10" height="18">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M.366.616a1.25 1.25 0 011.768 0l7.5 7.5a1.25 1.25 0 010 1.768l-7.5 7.5a1.25 1.25 0 01-1.768-1.768L6.982 9 .366 2.384a1.25 1.25 0 010-1.768z"
+                  fill-opacity=".8"
+                />
+              </svg>
+            </button>
+          </div>
+          <!-- .swiper-container -->
+          <div class="hotel-right">
+            <div class="booking">
+              <div class="booking__info">
+                <div class="booking__price">
+                  <span class="booking__start">price starts as</span>
+                  <strong class="booking__pricetag">$ 8,500</strong>
+                  <span class="booking__per-room">per room / night</span>
+                </div>
+                <!-- /.booking__price -->
+                <div class="booking__room">
+                  <div class="booking__text">
+                    <svg class="booking__icon" width="14" height="14">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.604 9.02a2.917 2.917 0 012.063-.853h4.666a2.917 2.917 0 012.917 2.916v1.167a.583.583 0 11-1.167 0v-1.167a1.75 1.75 0 00-1.75-1.75H4.667a1.75 1.75 0 00-1.75 1.75v1.167a.583.583 0 11-1.167 0v-1.167c0-.773.307-1.515.854-2.062zM7 2.333a1.75 1.75 0 100 3.5 1.75 1.75 0 000-3.5zm-2.917 1.75a2.917 2.917 0 115.834 0 2.917 2.917 0 01-5.834 0z"
+                      />
+                    </svg>
+                    <span class="booking__description">2 x Guests</span>
+                  </div>
+                  <div class="booking__text">
+                    <svg class="booking__icon" width="14" height="14">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 1l6 4v7a2 2 0 01-2 1H3a2 2 0 01-2-1V5l6-4zM2 6v6a1 1 0 001 0h8a1 1 0 001 0V6L7 2 2 6z"
+                      />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5 7V6h4v7a1 1 0 11-1 0V8H6v5a1 1 0 11-1 0V7z" fill="#fff" />
+                    </svg>
+                    <span class="booking__description">1 x Room</span>
+                  </div>
+                </div>
+                <!-- /.booking__room -->
+              </div>
+              <!-- /.booking-info -->
+              <div class="booking__call-center">
+                <span class="booking__heading">Quick Booking</span>
+                <a href="tel:12100" class="booking__number">
+                  <svg class="booking__number__icon" width="14" height="14">
+                    <g clip-path="url(#clip0)">
+                      <path
+                        d="M11.7 13.4h-.2c-1.9-.3-3.7-1-5.3-2A12.3 12.3 0 01.6 2.6c0-.5.2-1 .4-1.3.3-.3.7-.6 1.2-.6h1.9c1 0 1.7.6 1.8 1.5l.3 1.5c.3.7.1 1.4-.4 1.9l-.4.4a9 9 0 002.7 2.7l.4-.4c.5-.5 1.2-.7 1.9-.4l1.5.3c.9.1 1.5.9 1.5 1.8v1.7c0 .5-.2 1-.5 1.2a2 2 0 01-1.2.6zM4 1.7H2.4c-.2 0-.4.2-.5.3v.4a11 11 0 009.7 9.8c.2 0 .4 0 .5-.2l.1-.4V10c0-.3-.2-.6-.5-.6-.6 0-1.1-.3-1.7-.5l-.7.1-.7.8c-.2.2-.5.2-.7.1A9.6 9.6 0 014 6.1c0-.3 0-.6.2-.7l.8-.8V4l-.4-1.7c0-.3-.3-.5-.6-.5zm7 4.1a.6.6 0 01-.6-.4c-.2-1-1-1.7-1.9-1.9a.6.6 0 01-.4-.7c0-.3.3-.5.7-.5 1.4.3 2.5 1.4 2.7 2.8 0 .3-.1.6-.5.7zm2.3 0c-.3 0-.5-.3-.6-.5C12.6 3 11 1.4 8.7 1a.7.7 0 01-.5-.6c0-.3.3-.6.6-.6 2.7.3 4.8 2.4 5.1 5.2.1.3-.1.6-.5.6z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0"><path fill="#fff" d="M0 0h14v14H0z" /></clipPath>
+                    </defs>
+                  </svg>
+                  <span class="booking__num">12100</span>
+                </a>
+              </div>
+              <!-- /.booking__call-center -->
+              <button class="button booking__button">View Other Options</button>
+            </div>
+            <!-- /.booking -->
+            <div class="map" id="map"></div>
+            <!-- /.map -->
+          </div>
+          <!-- /.hotel-right -->
+        </div>
+        <!-- /.hotel-grid -->
+      </div>
+      <!-- .container -->
+    </section>
+    <section class="packages">
+      <div class="container">
+        <h2 class="packages__title">Other Packages</h2>
+        <div class="packages__wrapper">
+          <div class="packages__card packages__card--large packages-card1">
+            <img src="./img/packages-1.jpg" alt="Hotel Blue Haven" class="packages__card--large__image" />
+            <span class="offer packages-offer1">Flash Offer</span>
+            <div class="packages__content">
+              <div class="stars packages__stars">
+                <img src="./img/star.svg" alt="Icon: star" />
+                <img src="./img/star.svg" alt="Icon: star" />
+                <img src="./img/star.svg" alt="Icon: star" />
+                <img src="./img/star.svg" alt="Icon: star" />
+                <img src="./img/star.svg" alt="Icon: star" />
+              </div>
+              <!-- .packages-stars -->
+              <h4 class="packages__content-title">Hotel Blue Haven</h4>
+              <p class="packages__content-description">
+                Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco
+                do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna
+                mollit. Ipsum est fugiat velit ea ullamco do
+              </p>
+              <ul class="packages__content-info">
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7 1a5 5 0 00-5 5c0 2 2 3 3 5a17 17 0 002 2 16 16 0 002-2c1-2 3-3 3-5a5 5 0 00-5-5zm0 12v1a11 11 0 01-1-1l-2-1-3-6a6 6 0 0112 0l-3 6a18 18 0 01-3 2v-1zm0 0v1-1z"
+                    />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5a1 1 0 100 2 1 1 0 000-2zM5 6a2 2 0 114 0 2 2 0 01-4 0z" />
+                  </svg>
+                  <span class="packages__text">1749 Wheeler Ridge Delaware</span>
+                </li>
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 9l2-1h4a3 3 0 013 3v1a1 1 0 11-1 0v-1a2 2 0 00-2-2H5a2 2 0 00-2 2v1a1 1 0 11-1 0v-1l1-2zM7 2a2 2 0 100 4 2 2 0 000-4zM4 4a3 3 0 116 0 3 3 0 01-6 0z"
+                    />
+                  </svg>
+                  <span class="packages__text">2 x Guests</span>
+                </li>
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7 1l6 4v7a2 2 0 01-2 1H3a2 2 0 01-2-1V5l6-4zM2 6v6a1 1 0 001 0h8a1 1 0 001 0V6L7 2 2 6z"
+                    />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 7V6h4v7a1 1 0 11-1 0V8H6v5a1 1 0 11-1 0V7z" />
+                  </svg>
+                  <span class="packages__text">1 x Room</span>
+                </li>
+              </ul>
+              <!-- /.packages__info -->
+              <div class="packages-price">
+                <span class="packages-price__lastprice">$ 10,500</span>
+                <span class="packages-price__pricetag">$ 8,500</span>
+                <button class="packages__button">Book Now</button>
+              </div>
+            </div>
+            <!-- packages-container -->
+          </div>
+          <!-- .packages__card-large-1 -->
+          <div class="packages__card packages__card--small packages-card2">
+            <img src="./img/packages-2.jpg" alt="LUX* Belle Mare" class="packages__card--small__image" />
+            <span class="offer packages-offer2">Flash Offer</span>
+            <div class="packages__content2">
+              <h4 class="packages__content2-title">LUX* Belle Mare</h4>
+              <ul class="packages__content2-info">
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7 1a5 5 0 00-5 5c0 2 2 3 3 5a17 17 0 002 2 16 16 0 002-2c1-2 3-3 3-5a5 5 0 00-5-5zm0 12v1a11 11 0 01-1-1l-2-1-3-6a6 6 0 0112 0l-3 6a18 18 0 01-3 2v-1zm0 0v1-1z"
+                    />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5a1 1 0 100 2 1 1 0 000-2zM5 6a2 2 0 114 0 2 2 0 01-4 0z" />
+                  </svg>
+                  <span class="packages__text">1749 Wheeler Ridge Delaware</span>
+                </li>
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 9l2-1h4a3 3 0 013 3v1a1 1 0 11-1 0v-1a2 2 0 00-2-2H5a2 2 0 00-2 2v1a1 1 0 11-1 0v-1l1-2zM7 2a2 2 0 100 4 2 2 0 000-4zM4 4a3 3 0 116 0 3 3 0 01-6 0z"
+                    />
+                  </svg>
+                  <span class="packages__text">2 x Guests</span>
+                </li>
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7 1l6 4v7a2 2 0 01-2 1H3a2 2 0 01-2-1V5l6-4zM2 6v6a1 1 0 001 0h8a1 1 0 001 0V6L7 2 2 6z"
+                    />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 7V6h4v7a1 1 0 11-1 0V8H6v5a1 1 0 11-1 0V7z" />
+                  </svg>
+                  <span class="packages__text">1 x Room</span>
+                </li>
+              </ul>
+              <!-- /.packages__info -->
+              <div class="packages-price">
+                <span class="packages-price__lastprice">$ 8,500</span>
+                <span class="packages-price__pricetag">$ 3,000</span>
+                <button class="packages__button">Book Now</button>
+              </div>
+            </div>
+            <!-- /.packages-container-2 -->
+          </div>
+          <!-- .packages__card-small-2 -->
+          <div class="packages__card packages__card--small packages-card3">
+            <img src="./img/packages-3.jpg" alt="White Palace" class="packages__card--small__image" />
+            <span class="offer packages-offer2">Flash Offer</span>
+            <div class="packages__content2">
+              <h4 class="packages__content2-title">White Palace</h4>
+              <ul class="packages__content2-info">
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7 1a5 5 0 00-5 5c0 2 2 3 3 5a17 17 0 002 2 16 16 0 002-2c1-2 3-3 3-5a5 5 0 00-5-5zm0 12v1a11 11 0 01-1-1l-2-1-3-6a6 6 0 0112 0l-3 6a18 18 0 01-3 2v-1zm0 0v1-1z"
+                    />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5a1 1 0 100 2 1 1 0 000-2zM5 6a2 2 0 114 0 2 2 0 01-4 0z" />
+                  </svg>
+                  <span class="packages__text">1749 Wheeler Ridge Delaware</span>
+                </li>
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 9l2-1h4a3 3 0 013 3v1a1 1 0 11-1 0v-1a2 2 0 00-2-2H5a2 2 0 00-2 2v1a1 1 0 11-1 0v-1l1-2zM7 2a2 2 0 100 4 2 2 0 000-4zM4 4a3 3 0 116 0 3 3 0 01-6 0z"
+                    />
+                  </svg>
+                  <span class="packages__text">2 x Guests</span>
+                </li>
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7 1l6 4v7a2 2 0 01-2 1H3a2 2 0 01-2-1V5l6-4zM2 6v6a1 1 0 001 0h8a1 1 0 001 0V6L7 2 2 6z"
+                    />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 7V6h4v7a1 1 0 11-1 0V8H6v5a1 1 0 11-1 0V7z" />
+                  </svg>
+                  <span class="packages__text">1 x Room</span>
+                </li>
+              </ul>
+              <!-- /.packages__info -->
+              <div class="packages-price">
+                <span class="packages-price__lastprice">$ 10,500</span>
+                <span class="packages-price__pricetag">$ 9,500</span>
+                <button class="packages__button">Book Now</button>
+              </div>
+            </div>
+            <!-- /.packages-container-2 -->
+          </div>
+          <!-- .packages__card-small-3 -->
+          <div class="packages__card packages__card--small packages-card4">
+            <img src="./img/packages-4.jpg" alt="Luxury Place" class="packages__card--small__image" />
+            <span class="offer packages-offer2">Flash Offer</span>
+            <div class="packages__content2">
+              <h4 class="packages__content2-title">Luxury Place</h4>
+              <ul class="packages__content2-info">
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7 1a5 5 0 00-5 5c0 2 2 3 3 5a17 17 0 002 2 16 16 0 002-2c1-2 3-3 3-5a5 5 0 00-5-5zm0 12v1a11 11 0 01-1-1l-2-1-3-6a6 6 0 0112 0l-3 6a18 18 0 01-3 2v-1zm0 0v1-1z"
+                    />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5a1 1 0 100 2 1 1 0 000-2zM5 6a2 2 0 114 0 2 2 0 01-4 0z" />
+                  </svg>
+                  <span class="packages__text">1749 Wheeler Ridge Delaware</span>
+                </li>
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 9l2-1h4a3 3 0 013 3v1a1 1 0 11-1 0v-1a2 2 0 00-2-2H5a2 2 0 00-2 2v1a1 1 0 11-1 0v-1l1-2zM7 2a2 2 0 100 4 2 2 0 000-4zM4 4a3 3 0 116 0 3 3 0 01-6 0z"
+                    />
+                  </svg>
+                  <span class="packages__text">2 x Guests</span>
+                </li>
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7 1l6 4v7a2 2 0 01-2 1H3a2 2 0 01-2-1V5l6-4zM2 6v6a1 1 0 001 0h8a1 1 0 001 0V6L7 2 2 6z"
+                    />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 7V6h4v7a1 1 0 11-1 0V8H6v5a1 1 0 11-1 0V7z" />
+                  </svg>
+                  <span class="packages__text">1 x Room</span>
+                </li>
+              </ul>
+              <!-- /.packages__info -->
+              <div class="packages-price">
+                <span class="packages-price__lastprice">$ 4,500</span>
+                <span class="packages-price__pricetag">$ 2,500</span>
+                <button class="packages__button">Book Now</button>
+              </div>
+            </div>
+            <!-- /.packages-container-2 -->
+          </div>
+          <!-- .packages__card-small-4 -->
+          <div class="packages__card packages__card--small packages-card5">
+            <img src="./img/packages-5.jpg" alt="Hotel Five Star" class="packages__card--small__image" />
+            <span class="offer packages-offer2">Flash Offer</span>
+            <div class="packages__content2">
+              <h4 class="packages__content2-title">Hotel Five Star</h4>
+              <ul class="packages__content2-info">
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7 1a5 5 0 00-5 5c0 2 2 3 3 5a17 17 0 002 2 16 16 0 002-2c1-2 3-3 3-5a5 5 0 00-5-5zm0 12v1a11 11 0 01-1-1l-2-1-3-6a6 6 0 0112 0l-3 6a18 18 0 01-3 2v-1zm0 0v1-1z"
+                    />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5a1 1 0 100 2 1 1 0 000-2zM5 6a2 2 0 114 0 2 2 0 01-4 0z" />
+                  </svg>
+                  <span class="packages__text">1749 Wheeler Ridge Delaware</span>
+                </li>
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 9l2-1h4a3 3 0 013 3v1a1 1 0 11-1 0v-1a2 2 0 00-2-2H5a2 2 0 00-2 2v1a1 1 0 11-1 0v-1l1-2zM7 2a2 2 0 100 4 2 2 0 000-4zM4 4a3 3 0 116 0 3 3 0 01-6 0z"
+                    />
+                  </svg>
+                  <span class="packages__text">2 x Guests</span>
+                </li>
+                <li class="packages__item">
+                  <svg class="packages__icon" width="14" height="14">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7 1l6 4v7a2 2 0 01-2 1H3a2 2 0 01-2-1V5l6-4zM2 6v6a1 1 0 001 0h8a1 1 0 001 0V6L7 2 2 6z"
+                    />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 7V6h4v7a1 1 0 11-1 0V8H6v5a1 1 0 11-1 0V7z" />
+                  </svg>
+                  <span class="packages__text">1 x Room</span>
+                </li>
+              </ul>
+              <!-- /.packages__info -->
+              <div class="packages-price">
+                <span class="packages-price__lastprice">$ 6,500</span>
+                <span class="packages-price__pricetag">$ 3,500</span>
+                <button class="packages__button">Book Now</button>
+              </div>
+            </div>
+            <!-- /.packages-container-2 -->
+          </div>
+          <!-- .packages__card-small-5 -->
+        </div>
+        <!-- /.packages-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <section class="newsletter" data-parallax="scroll" data-speed="0.1" data-image-src="./img/newsletter.jpg">
+      <div class="newsletter-wrapper">
+        <h2 class="newsletter-title newsletter__title">
+          subscribe to our
+          <span class="newsletter-title__strong">Newsletter</span>
+        </h2>
+        <form action="#" class="subscribe newsletter__subscribe">
+          <input type="text" class="subscribe__input" placeholder="Your email address" required />
+          <button class="subscribe__button">Send</button>
+        </form>
+      </div>
+      <!-- /.newsletter-wrapper -->
+    </section>
+    <section class="reviews reviews__slider">
+      <div class="container">
+        <h2 class="reviews__title">What people think about&nbsp;&nbsp;us</h2>
+        <div class="swiper-container reviews-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img src="./img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar" />
+                  <h3 class="reviews-slider__username">Megan Fox</h3>
+                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                  <div class="reviews-slider__rating">
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                  </div>
+                  <!-- .reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was
+                  a good experience and could recommend.
+                </p>
+              </div>
+              <!-- .reviews-slider__item -->
+            </div>
+            <!-- .swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img src="./img/reviews-avatar-1.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar" />
+                  <h3 class="reviews-slider__username">John Brown</h3>
+                  <span class="reviews-slider__date">Stayed 24 Jan, 2020</span>
+                  <div class="reviews-slider__rating">
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                  </div>
+                  <!-- .reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio dolorum nobis aliquam assumenda numquam, ea sint dolore
+                  labore, quasi nihil repellat. Eveniet enim numquam quam nobis, magni suscipit commodi eius porro explicabo atque, dolores
+                  cum saepe temporibus veritatis libero, tenetur quia exercitationem asperiores quis rerum praesentium? Corporis, totam!
+                  Deserunt, tempora.
+                </p>
+              </div>
+              <!-- .reviews-slider__item -->
+            </div>
+            <!-- .swiper-slide -->
+          </div>
+          <!-- .swiper-wrapper -->
+          <button class="reviews-slider__button reviews-slider__button__prev">
+            <svg width="10" height="18">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.6.6c.5.5.5 1.3 0 1.8L3 9l6.6 6.6A1.3 1.3 0 018 17.4L.4 9.9C-.1 9.4-.1 8.6.4 8L7.9.6C8.4.1 9 .1 9.6.6z"
+              />
+            </svg>
+          </button>
+          <button class="reviews-slider__button reviews-slider__button__next">
+            <svg width="10" height="18">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M.4.6C.9.1 1.6.1 2 .6l7.5 7.5c.5.5.5 1.3 0 1.8l-7.5 7.5a1.3 1.3 0 01-1.7-1.8L7 9 .4 2.4C-.1 1.9-.1 1 .4.6z"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- .reviews-slider -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <section class="activities">
+      <div class="container">
+        <h2 class="activities__title">Other Activities</h2>
+        <div class="activities-wrapper activities__wrapper">
+          <div class="card activities__card activities__card1">
+            <img src="./img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image" />
+            <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
+            <button class="card__button">Book Now</button>
+          </div>
+          <!-- /.card -->
+          <div class="card activities__card activities__card2">
+            <img src="./img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image" />
+            <h3 class="card__title">Gymkhana club golf course</h3>
+            <button class="card__button">Book Now</button>
+          </div>
+          <!-- /.card -->
+          <div class="card activities__card activities__card3">
+            <img src="./img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image" />
+            <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
+            <button class="card__button">Book Now</button>
+          </div>
+          <!-- /.card -->
+          <div class="card activities__card activities__card4">
+            <img src="./img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image" />
+            <h3 class="card__title">The blue marine discovery quest</h3>
+            <button class="card__button">Book Now</button>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.activities-wrapper -->
+      </div>
+      <!-- .container -->
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
