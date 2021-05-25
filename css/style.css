@@ -1820,6 +1820,7 @@ template {
   }
   .nav__item--mobile--visible {
     display: block;
+    margin-left: 18px;
   }
   .nav__link {
     padding: 0;
