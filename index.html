@@ -15,19 +15,19 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=28f2864b-fbed-44fd-ae7a-a0d292c5269c&lang=ru_RU"></script>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
             <img src="./img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
           </a>
-          <form action="#" class="search navbar__search">
+          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
             <input type="text" class="search__input" placeholder="Seacrh Location" />
             <button class="search__button">
               <img src="./img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img src="./img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
             <span class="user__name">Nathan</span>
           </a>
@@ -45,6 +45,21 @@
         <div class="container">
           <nav class="nav navbar__nav">
             <ul class="nav__list">
+              <li class="nav__item nav__item--mobile--visible">
+                <a href="#" class="user navbar__user navbar__user--mobile--visible">
+                  <img src="./img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
+                  <span class="user__name user__name--light">Nathan</span>
+                </a>
+                <!-- /.user -->
+              </li>
+              <li class="nav__item nav__item--mobile--visible">
+                <form action="#" class="search navbar__search navbar__search--mobile--visible">
+                  <input type="text" class="search__input" placeholder="Seacrh Location" />
+                  <button class="search__button">
+                    <img src="./img/search.svg" alt="Icon: search" />
+                  </button>
+                </form>
+              </li>
               <li class="nav__item">
                 <a href="#" class="nav__link">All Deals</a>
               </li>

@@ -7,6 +7,7 @@ body {
   font-family: 'Mulish', sans-serif;
   background-color: #F5FAFE;
   color: #333333;
+  padding-top: 78px;
 }
 
 .container {
@@ -431,6 +432,10 @@ template {
   transition: 0.3s;
 }
 
+.nav__item--mobile--visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -491,6 +496,10 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.navbar__search--mobile--visible, .navbar__user--mobile--visible {
+  display: none;
 }
 
 .breadcrumb-list {
@@ -1586,6 +1595,15 @@ template {
     max-width: 576px;
     width: 92%;
   }
+  .navbar__search {
+    width: 250px;
+  }
+  .search__button {
+    width: 50px;
+  }
+  .nav__list {
+    margin: 0 0 0 -50px;
+  }
   .nav__link {
     padding: 22px 0;
     margin-left: 16px;
@@ -1725,8 +1743,29 @@ template {
   .logo {
     width: 99px;
   }
-  .navbar__search, .navbar__user {
+  .navbar__mobile--fixed {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
     display: none;
+  }
+  .navbar__search--mobile--visible, .navbar__user--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .menu-button {
     display: -webkit-box;
@@ -1754,8 +1793,40 @@ template {
     height: 1px;
     background-color: #333333;
   }
-  .nav__list {
+  .user__name--light {
+    color: #fff;
+    margin: 10px 0 0 0;
+  }
+  .nav-bottom {
     display: none;
+    padding-top: 31px;
+  }
+  .nav-bottom--visible {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+  }
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav__item {
+    margin-bottom: 20px;
+  }
+  .nav__item--mobile--visible {
+    display: block;
+  }
+  .nav__link {
+    padding: 0;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
   }
   .hotel__slider {
     margin-bottom: 10px;

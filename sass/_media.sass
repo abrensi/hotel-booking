@@ -99,7 +99,15 @@
   .container
     max-width: 576px
     width: 92%
+  .navbar
+    &__search
+      width: 250px
+  .search
+    &__button
+      width: 50px
   .nav
+    &__list
+      margin: 0 0 0 -50px
     &__link
       padding: 22px 0
       margin-left: 16px
@@ -198,8 +206,22 @@
   .logo
     width: 99px
   .navbar
+    &__mobile
+      &--fixed
+        position: fixed
+        z-index: 99
+        top: 0
+        right: 0
+        left: 0
     &__search, &__user
-      display: none
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
   .menu
     &-button
       display: flex
@@ -216,9 +238,35 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        color: #fff
+        margin: 10px 0 0 0
   .nav
-    &__list
+    &-bottom
       display: none
+      padding-top: 31px
+      &--visible
+        display: block
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        top: 78px
+    &__list
+      flex-direction: column
+    &__item
+      margin-bottom: 20px
+      &--mobile
+        &--visible
+          display: block
+    &__link
+      padding: 0
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      text-transform: uppercase
   .hotel
     &__slider
       margin-bottom: 10px

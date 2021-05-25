@@ -34,6 +34,10 @@
       transition: 0.3s
     &:not(:hover)
       transition: 0.3s 
+  &__item
+    &--mobile
+      &--visible
+        display: none
 .logo
   width: 177px
 .search
@@ -75,4 +79,9 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
+.navbar
+  &__search, &__user
+    &--mobile
+      &--visible
+        display: none
   

@@ -63,3 +63,9 @@ const reviewsSlider = new Swiper(".reviews-slider", {
 
   spaceBetween: 15,
 });
+
+var menuButton = $(".menu-button");
+  menuButton.on("click", function () {
+    console.log("Клик")
+    $(".nav-bottom").toggleClass("nav-bottom--visible");
+  });
