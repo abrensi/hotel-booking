@@ -68,4 +68,6 @@ var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     console.log("Клик")
     $(".nav-bottom").toggleClass("nav-bottom--visible");
+    $("body").toggleClass("no-scroll");
   });
+  
