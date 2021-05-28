@@ -2142,6 +2142,7 @@ template {
     right: 0;
     bottom: 0;
     top: 78px;
+    overflow: auto;
   }
   .nav__list {
     -webkit-box-orient: vertical;
