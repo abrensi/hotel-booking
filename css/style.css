@@ -7,7 +7,6 @@ body {
   font-family: 'Mulish', sans-serif;
   background-color: #F5FAFE;
   color: #333333;
-  padding-top: 78px;
 }
 
 .no-scroll {
@@ -2072,6 +2071,9 @@ template {
 }
 
 @media (max-width: 576px) {
+  body {
+    padding-top: 78px;
+  }
   .logo {
     width: 99px;
   }
