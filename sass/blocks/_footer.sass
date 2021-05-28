@@ -6,7 +6,7 @@
   &-wrapper
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
-    grid-gap: 20px
+    grid-gap: 24px 30px
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
     padding-bottom: 95px
@@ -27,6 +27,13 @@
       align-items: start
       grid-row: 2 / 3
       grid-column: span 2
+    &-icon
+      fill: #BDBDBD
+      &:hover
+        fill: red 
+        transition: 0.3s
+      &:not(:hover)
+        transition: 0.3s 
   &__contact
     &-details
       grid-column: span 2
@@ -61,20 +68,38 @@
     &--mb-2
       margin-bottom: 20px
   &__icon
-    &-wrapper
-      min-width: 40px
+    fill: #BDBDBD
+    margin-right: 17px
   &__text
     color: $footer-text-color
     margin-bottom: 22px
   &__link
+    display: block
     color: inherit
     text-decoration: none
+    flex-basis: 100%
+    &-main
+      &:hover
+        color: red  
+        transition: 0.3s
+      &:not(:hover)
+        transition: 0.3s 
+    &-contacts
+      display: flex
+      align-items: center
+      color: inherit
+      text-decoration: none
+      flex-basis: 100%
+      &--2
+        align-items: flex-start
   &__input
     margin-bottom: 15px
     flex-basis: 48%
   &__message
     flex-basis: 100%
     margin-bottom: 23px
+    resize: none
+    height: 123px
   &__button
     &:hover
       transition: 0.3s
@@ -90,6 +115,10 @@
     display: flex
     justify-content: center
     position: relative
+  &__form
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
   .bottom
     &__list
       list-style: none
@@ -105,8 +134,9 @@
       margin-right: 11px
   .flags
     position: absolute
-    right: 0
-    top: -7px
+    top: -6px
+    right: 2px
+    max-width: 136px
       
 
       
