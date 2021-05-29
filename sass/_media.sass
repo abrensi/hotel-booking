@@ -100,7 +100,8 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
     &__input
-      flex-basis: 48%
+      &-group
+        flex-basis: 48%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -143,30 +144,19 @@
       position: static
 @media (max-width: 768px)
   .container
-    max-width: 576px
+    max-width: 700px
     width: 92%
-  .navbar
-    &__search
-      width: 250px
-  .search
-    &__button
-      width: 50px
+    padding: 0
   .nav
     &__list
       margin: 0 0 0 -50px
     &__link
       padding: 22px 0
-      margin-left: 16px
-      font-size: 8px
+      margin-left: 11px
+      font-size: 11px
       line-height: 15px
-  .stars
-    flex-basis: auto
   .hotel
     padding-top: 18px
-    &-name
-      flex-basis: 100%
-    &-wrapper
-      justify-content: space-between
     &-info
       &__text
         width: 100%
@@ -176,13 +166,12 @@
       &__rating
         display: none
       &__offer
-        order: -1
-        margin-left: 0
+        margin-top: 12px
     &-right
       height: 210px
       padding-top: 12px
     &-slider
-      height: 350px
+      height: 450px
   .booking
     width: 50%
     flex: auto
@@ -193,6 +182,9 @@
     &__button
       text-overflow: inherit
       padding: 13px 44px
+  .newsletter
+    &__subscribe
+      margin-right: 0
   .map
     width: 50%
     flex-auto: 0 
@@ -200,28 +192,33 @@
     &-slider
       &__item
         padding: 0 30px 30px
+        margin: 45px auto 0px
         &::after, &::before
           display: none
       &__text
         max-width: 455px
     &__slider
-      padding-top: 27px
+      padding-top: 50px
     &__title
       font-weight: bold
       font-size: 30px
       line-height: 24px
       text-align: center
       text-transform: uppercase
-      margin-top: 6px
+      margin-top: 4px
+      margin-bottom: 57px
   .activities
-    padding-top: 31px
-    padding-bottom: 60px
+    padding-top: 67px
+    padding-bottom: 49px
   .card
     width: 49%
     height: 255px
     &__title
       width: 200px
   .packages
+    &-container
+      max-width: 480px
+      margin: 0 auto
     &__wrapper
       grid-template-rows: 460px 460px 460px
       grid-template-columns: 242px 242px
@@ -253,8 +250,27 @@
       &__pricetag
         margin-right: 21px
   .footer
+    padding-top: 40px
     &__bottom
       justify-content: space-between
+    &__logo
+      width: 100px
+    &__social
+      &-network
+        margin: 42px 43px 0 -55px
+    &__title
+      margin: 7px 0 16px 0px
+      &--message
+        margin: 4px 0 29px 0px
+    &__additional
+      margin-left: -43px
+    &__legal
+      margin-left: -49px
+    &__form
+      width: 540px
+    &__text
+      margin-bottom: 25px
+      margin-top: 32px
   .footer .bottom
     &__list
       margin: 0
@@ -288,6 +304,9 @@
     &__user
       flex-direction: column
       justify-content: center
+  .search
+    &__input
+      width: 290px
   .menu
     &-button
       display: flex
@@ -341,13 +360,21 @@
       line-height: 15px
       text-transform: uppercase
   .hotel
+    &-wrapper
+      justify-content: space-between
     &__slider
       margin-bottom: 10px
     &-slider
-      height: 250px
+      height: 200px
     &-right
       flex-direction: column
       min-height: 450px
+    &-info
+      margin-top: -36px
+      &__offer
+        margin-left: 0px
+        order: -1
+        margin-top: 6px
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -440,10 +467,11 @@
       justify-content: space-between
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &-wrapper
       grid-template-columns: 1fr
-      padding-bottom: 45px
+      padding-bottom: 30px
     &__logo
       grid-row: 1
       grid-column: 1
@@ -452,27 +480,39 @@
         grid-row: 2
         grid-column: 1
         flex-wrap: wrap
+        margin: 0
+        margin-top: -20px
     &__title
       &--inline
         margin-bottom: 20px
+      &--message
+        margin: 4px 0 9px 0px 
     &__additional
       grid-row: 4
       grid-column: 1
+      margin-left: 0
+      margin-top: -17px
     &__categories
       grid-row: 5
       grid-column: 1
+      margin-top: -17px
     &__legal
       grid-row: 3
       grid-column: 1
+      margin-left: 0
+      padding-left: 0
+      margin-top: -40px
     &__contact
       &-details
         grid-row: 6
         grid-column: 1
+        margin-top: -19px
       &-form
         grid-row: 7
         grid-column: 1
     &__message
       width: 100%
+      margin-bottom: 44px
     &__form
       width: 100%
     &__bottom
@@ -488,7 +528,8 @@
       margin-right: 8px
   .modal
     &__dialog
-      padding: 33px 40px
+      padding: 33px 36px
+      width: 85%
     &__button
       width: 150px
 
