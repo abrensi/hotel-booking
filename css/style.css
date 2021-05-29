@@ -31,6 +31,10 @@ button {
   text-overflow: ellipsis;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 .input {
   background-color: #fff;
   border-radius: 4px;
@@ -2578,7 +2582,7 @@ template {
     width: 100%;
   }
   .footer__form {
-    width: 460px;
+    width: 100%;
   }
   .footer__bottom {
     -webkit-box-orient: vertical;
