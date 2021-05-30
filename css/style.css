@@ -1678,6 +1678,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  margin-bottom: 3px;
 }
 
 .modal__overlay {
