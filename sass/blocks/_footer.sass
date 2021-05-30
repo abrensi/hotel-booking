@@ -83,6 +83,13 @@
     fill: #BDBDBD
     margin-right: 17px
     flex-shrink: 0
+    &:hover
+      fill: red
+      transition: 0.3s
+    &:not(:hover)
+      transition: 0.3s
+    &--svg svg
+      margin-right: 17px
   &__text
     color: $footer-text-color
     margin-bottom: 22px
@@ -91,12 +98,12 @@
     color: inherit
     text-decoration: none
     flex-basis: 100%
-    &-main
-      &:hover
-        color: red  
-        transition: 0.3s
-      &:not(:hover)
-        transition: 0.3s 
+    &:hover
+      fill: red
+      color: red
+      transition: 0.3s
+    &:not(:hover)
+      transition: 0.3s 
     &-contacts
       display: flex
       align-items: center
@@ -154,6 +161,9 @@
     max-width: 136px
 .invalid
   color: red
+  font-weight: normal
+  font-size: 12px
+  line-height: 15px
       
 
       

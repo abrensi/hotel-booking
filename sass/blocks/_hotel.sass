@@ -50,6 +50,11 @@
       background-color: transparent
       cursor: pointer
       padding: 0
+      &:hover
+        transition: 0.3s
+        fill: red
+      &:not(:hover)
+        transition: 0.3s
       &__next
         right: 18px
         fill: #fff
@@ -184,6 +189,11 @@
     white-space: nowrap
     overflow: hidden
     text-overflow: ellipsis
+    &:hover
+      transition: 0.3s
+      background-color: #bb0a2b
+    &:not(:hover)
+      transition: 0.3s
 .map
   width: 347px
   height: 213px

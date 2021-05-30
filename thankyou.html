@@ -12,6 +12,8 @@
     />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=28f2864b-fbed-44fd-ae7a-a0d292c5269c&lang=ru_RU"></script>
   </head>
   <body>
@@ -92,7 +94,7 @@
       <div class="container">
         <ul class="breadcrumb-list">
           <li class="breadcrumb-list__item">
-            <a href="#" class="breadcrumb-list__link">Home</a>
+            <a href="https://nurali-kalkhanov.ru/hotel-booking" class="breadcrumb-list__link">Home</a>
           </li>
           <li class="breadcrumb-list__item">
             <a href="#" class="breadcrumb-list__link">Flash Offers</a>
@@ -110,7 +112,8 @@
             <div class="hotel-wrapper">
               <h1 class="hotel-name hotel-info__name">Message sent</h1>
             </div>
-            <p class="hotel-description hotel-info__description">We will contact you shortly!</p>
+            <p class="hotel-description thankyou__description">We will contact you shortly!</p>
+            <a href="https://nurali-kalkhanov.ru/hotel-booking" class="home__button">To home</a>
           </div>
           <!-- /.hotel-info__left -->
         </div>
@@ -229,10 +232,14 @@
             </ul>
           </div>
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required />
-              <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" required />
+            <h3 class="footer__title footer__title--mb-3 footer__title--message">Send us a message</h3>
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input type="text" class="input footer__input error" placeholder="Your Full Name*" name="name" minlength="2" required />
+              </div>
+              <div class="footer__input-group">
+                <input type="text" class="input footer__input phone" placeholder="Phone Number*" name="phone" minlength="18" required />
+              </div>
               <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -285,6 +292,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
